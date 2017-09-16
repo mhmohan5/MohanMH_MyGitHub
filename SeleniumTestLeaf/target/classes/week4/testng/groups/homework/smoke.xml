@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5">
+	<groups>
+		<run>
+			<include name="common"></include>
+			<include name="smoke"></include>
+		</run>
+	</groups>
+	<test name="Test">
+		<classes>
+			<class name="week4.testng.groups.homework.CreateLead" />
+			<class name="week4.testng.groups.homework.DeleteLead" />
+			<class name="week4.testng.groups.homework.EditLead" />
+			<class name="week4.testng.groups.homework.MergeLead" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

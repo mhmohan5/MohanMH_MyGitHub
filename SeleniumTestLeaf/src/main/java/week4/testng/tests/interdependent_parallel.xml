@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Week4Testng" verbose="5">
+	<test name="Leads" parallel="classes" thread-count="2">
+		<classes>
+			<class name="week4.testng.tests.CreateLead" />
+			<class name="week4.testng.tests.EditLeadDependsOnCreate" />
+			<class name="week4.testng.tests.DeleteLeadDependsOnCreate" />
+			<class name="week4.testng.tests.MergeLead" />
+		</classes>
+	</test> <!-- Leads -->
+</suite> <!-- Week4Testng -->

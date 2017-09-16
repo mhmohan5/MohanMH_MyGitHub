@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="URL" value="http://leaftaps.com/opentaps/control/main"></parameter>
+<parameter name="uname" value="DemoSalesManager"></parameter>
+<parameter name="pwd" value="crmsfa"></parameter>
+  <test name="Test">
+    <classes>
+      <class name="week4.testng.parameters.EditLead"/>
+      <class name="week4.testng.parameters.CreateLead"/>
+      <class name="week4.testng.parameters.DeleteLead"/>
+      <class name="week4.testng.parameters.MergeLead"/>
+      <class name="week4.testng.parameters.DuplicateLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

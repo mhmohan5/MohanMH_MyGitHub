@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Week4Testng" verbose="5">
+	<test name="Mohan" parallel="classes">
+		<classes>
+			<class name="week4.testng.tests.DuplicateLead" />
+			<class name="week4.testng.tests.MergeLead" />
+		</classes>
+	</test>
+	<test name="Leads">
+		<classes>
+			<class name="week4.testng.tests.CreateLead" />
+			<class name="week4.testng.tests.EditLead" />
+			<class name="week4.testng.tests.DeleteLead" />
+		</classes>
+	</test> <!-- Leads -->
+</suite> <!-- Week4Testng -->

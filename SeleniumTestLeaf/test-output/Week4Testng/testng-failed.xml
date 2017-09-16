@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Week4Testng]">
+  <test thread-count="2" name="Leads" parallel="classes">
+    <classes>
+      <class name="week4.testng.tests.CreateLead"/>
+      <class name="week4.testng.tests.EditLeadDependsOnCreate"/>
+      <class name="week4.testng.tests.DeleteLeadDependsOnCreate"/>
+      <class name="week4.testng.tests.MergeLead"/>
+    </classes>
+  </test> <!-- Leads -->
+  <test name="Leads(failed)" parallel="classes">
+    <classes>
+      <class name="week4.testng.tests.EditLeadDependsOnCreate">
+        <methods>
+          <include name="EditLeadTestCase"/>
+        </methods>
+      </class> <!-- week4.testng.tests.EditLeadDependsOnCreate -->
+      <class name="week4.testng.tests.MergeLead">
+        <methods>
+          <include name="MergeLeadAtTest"/>
+          <include name="logincrmsfa"/>
+        </methods>
+      </class> <!-- week4.testng.tests.MergeLead -->
+      <class name="week4.testng.tests.CreateLead">
+        <methods>
+          <include name="logincrmsfa"/>
+          <include name="CreateLeadAtTest"/>
+        </methods>
+      </class> <!-- week4.testng.tests.CreateLead -->
+      <class name="week4.testng.tests.DeleteLeadDependsOnCreate">
+        <methods>
+          <include name="DeleteLeadTestCase"/>
+        </methods>
+      </class> <!-- week4.testng.tests.DeleteLeadDependsOnCreate -->
+    </classes>
+  </test> <!-- Leads(failed) -->
+</suite> <!-- Failed suite [Week4Testng] -->
